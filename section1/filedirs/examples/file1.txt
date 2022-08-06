@@ -1,4 +1,0 @@
-
-    this file contains
-    a number of words
-    and new lines

@@ -2,6 +2,7 @@ package filedirs
 
 import (
 	"bytes"
+	"fmt"
 	"io"
 	"os"
 	"strings"
@@ -49,6 +50,27 @@ func CapitalizerExample() error {
 	}
 
 	if err := Capitalizer(f1, f2); err != nil {
+		return err
+	}
+
+	if err := f1.Close(); err != nil {
+		return err
+	}
+	if err := f2.Close(); err != nil {
+		return err
+	}
+
+	fmt.Println("Contents of original file: ")
+	f1, _ = os.Open("file1.txt")
+	io.Copy(os.Stdout, f1)
+	fmt.Println("\n\nContents of UPPERCASED file: ")
+	f2, _ = os.Open("file2.txt")
+	io.Copy(os.Stdout, f2)
+
+	if err := f1.Close(); err != nil {
+		return err
+	}
+	if err := f2.Close(); err != nil {
 		return err
 	}
 
