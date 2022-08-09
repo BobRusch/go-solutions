@@ -2,4 +2,4 @@
 ## Section 2: Beginer Solutions in Go -- The Basics, Clients and Servers
 ## Based on Aaron Torres' book **Beginner Solutions in Go -- The Basics, Clients and Servers**
 
-### Aaron Torres' repository [Github Repository](git@github.com:agtorre/Go-Programming-Cookbook-Second-Edition.git)
+### Aaron Torres' repository [Github](git@github.com:agtorre/Go-Programming-Cookbook-Second-Edition.git)
